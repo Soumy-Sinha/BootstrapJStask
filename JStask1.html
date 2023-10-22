@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JStask1</title>
+</head>
+<body>
+
+    <script>
+        function reverseUserInput() 
+        {
+            const userInput = prompt("Enter a number:");
+            if (userInput === null || userInput.trim() === "") {
+                alert("You didn't enter a valid number.");
+                return;
+            }
+            const number = parseFloat(userInput);
+            if (!isNaN(number)) {
+        const reversedNumber = parseFloat(number.toString().split('').reverse().join(''));
+        alert("Reversed Number: " + reversedNumber);
+    } else {
+        alert("Invalid input. Please enter a valid number.");
+    }
+}
+
+reverseUserInput();
+
+    </script>
+</body>
+</html>

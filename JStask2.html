@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JStask2</title>
+</head>
+<body>
+
+    <script>
+        function sortAlphabetically(userInput) {
+    
+    const cleanInput = userInput.replace(/[^a-zA-Z]/g, '').toLowerCase();
+    const sortedInput = cleanInput.split('').sort().join('');
+    return sortedInput;
+}
+
+const userInput = prompt("Enter a string:");
+if (userInput !== null) {
+    const sortedString = sortAlphabetically(userInput);
+    alert("Sorted String: " + sortedString);
+}
+    </script>
+</body>
+</html>
